@@ -17,7 +17,7 @@ function Home() {
       <div className=' md:grid-cols-4 sm:grid-cols-2 p-5  grid px-16 gap-10 my-10 '>
         {data?.length > 0 ?
           data?.map((item) => (
-            <div className='w-100% col-md-3 col-sm-6 mb-4 p-10 shadow-2xl rounded-md'>
+            <div className='w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl p-4 shadow-2xl rounded-md bg-white flex flex-col'>
               <img className='w-full h-50' src={item?.image} alt="" />
               <h1 className='font-bold'>{item?.title}</h1>
               <p className='text-justify'>{item?.description}</p>
